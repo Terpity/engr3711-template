@@ -1,0 +1,4 @@
+[package]
+name = "engr3711-template"
+version = "0.1.0"
+entrypoint = "lib.typ"
