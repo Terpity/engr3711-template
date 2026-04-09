@@ -53,6 +53,9 @@
   show heading.where(level: 2): it => text(size: .9em, weight: 600)[#emph(it) #v(5pt)]
   show heading.where(level: 3): it => text(size: 1em, weight: 700)[#it #v(5pt)]
 
+  // Figure styling
+  show figure.caption: it => {align(left, text(size: 9pt)[#it])}
+
   // Title block
   align(center, par(leading: 1em)[
     Control Systems Report\
@@ -70,6 +73,8 @@
     ]\
     Motor Number: #motor_number\
   ])
+
+  set par(justify: true)
 
   // Report content
   doc
