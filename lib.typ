@@ -2,7 +2,7 @@
   title: none,
   degree: none,
   author: none,
-  group_members: (),
+  group_members: none,
   motor_number: none,
   columns: 1,
   doc
@@ -61,7 +61,9 @@
     Control Systems Report\
     #strong(title)\
     #degree\
-    #author\
+    #author
+    #if group_members != none and group_members.len() > 0 {[
+    \
     #if group_members.len() == 1 [
       #group_members.at(0)
     ] else if group_members.len() == 2 [
@@ -70,7 +72,7 @@
       #group_members.join(", ", last:", and ")
     ] else [
       ""
-    ]\
+    ]]}\
     Motor Number: #motor_number\
   ])
 
