@@ -73,7 +73,9 @@
     ] else [
       ""
     ]]}\
-    Motor Number: #motor_number\
+    #if motor_number != none {[
+      Motor Number: #motor_number\
+    ]}
   ])
 
   set par(justify: true)
